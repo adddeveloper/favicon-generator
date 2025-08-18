@@ -1,0 +1,161 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --red: #ff0000;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  color: var(--black);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  margin: 1rem 0 2rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.control-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  font-size: 0.875rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input:focus,
+select:focus {
+  outline: 1px solid var(--black);
+}
+
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.color-picker input[type="color"] {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid var(--black);
+}
+
+.color-picker input[type="text"] {
+  flex: 1;
+}
+
+input[type="range"] {
+  padding: 0;
+  height: 2px;
+  background: var(--black);
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: var(--black);
+}
+
+.preview {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#faviconPreview {
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+  background-color: var(--white);
+  outline: 1px solid var(--black);
+}
+
+button {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#generateBtn {
+  background-color: var(--red);
+}
+
+.download-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.shape-controls {
+  display: none;
+}
+
+.shape-specific {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.range-value {
+  display: inline-block;
+  min-width: 2rem;
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+  
+  .container {
+    padding: 0.5rem;
+  }
+}
