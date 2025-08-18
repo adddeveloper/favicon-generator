@@ -1,3 +1,7 @@
+
+## Text to Favicon Generator
+This project is a **Text to Favicon Generator**.  
+It lets you create favicons from text with **custom fonts, shapes, and colors**, then download them as a ready-to-use package.
 ```
 +----------------------------------------------------------------------+
 |   _____         _     _          _____           _                   |
@@ -5,12 +9,11 @@
 |    | |/ _ \ \/ / __| | __/ _ \  | |_ / _` \ \ / / |/ __/ _ \| '_ \   |
 |    | |  __/>  <| |_  | || (_) | |  _| (_| |\ V /| | (_| (_) | | | |  |
 |    |_|\___/_/\_\\__|  \__\___/  |_|  \__,_| \_/ |_|\___\___/|_| |_|  |
+|                                  This work is the art of adnanscode  |
 +----------------------------------------------------------------------+
-
 ```
-
-This project is a **Text to Favicon Generator**.  
-It lets you create favicons from text with **custom fonts, shapes, and colors**, then download them as a ready-to-use package.  
+Preview:
+![Preview](website.png)
 
 ---
 
