@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Generator - Documentation</title>
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+
+    <!-- PNG favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon/favicon-64x64.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --red: #ff0000;
+            --light-bg: #f5f5f5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--black);
+            background-color: var(--white);
+            padding: 1rem;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--black);
+        }
+        
+        h1, h2, h3 {
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 1.2rem;
+        }
+        
+        p, ul {
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .code-container {
+            position: relative;
+            margin: 1rem 0;
+        }
+        
+        .code-block {
+            background-color: var(--light-bg);
+            padding: 1rem;
+            font-family: monospace;
+            white-space: pre-wrap;
+            border: 1px solid var(--black);
+            overflow-x: auto;
+        }
+        
+        .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background-color: var(--black);
+            color: var(--white);
+            border: none;
+            padding: 0.4rem 0.8rem;
+            cursor: pointer;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .copy-btn:hover {
+            opacity: 0.9;
+        }
+        
+        .step {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--black);
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: var(--black);
+            color: var(--white);
+            text-align: center;
+            line-height: 30px;
+            margin-right: 0.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--black);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--black);
+        }
+        
+        .back-link:hover {
+            background-color: var(--black);
+            color: var(--white);
+        }
+        
+        .note {
+            background-color: #fff9e6;
+            padding: 1rem;
+            border-left: 4px solid #ffcc00;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Favicon Generator Documentation</h1>
+            <p>Learn how to use our favicon generator and implement the favicons on your website</p>
+        </header>
+        
+        <div class="step">
+            <h2><span class="step-number">1</span> Generate Your Favicon</h2>
+            <p>Use our favicon generator tool to create a custom favicon:</p>
+            <ul>
+                <li>Enter the text you want to display (usually 1-2 characters)</li>
+                <li>Customize the font, size, and color</li>
+                <li>Choose a shape and background</li>
+                <li>Adjust border settings if needed</li>
+                <li>Preview your favicon in real-time</li>
+                <li>Click "Generate Favicon" when you're satisfied</li>
+                <li>Download the ZIP file containing all favicon formats</li>
+            </ul>
+        </div>
+        
+        <div class="step">
+            <h2><span class="step-number">2</span> Extract the Files</h2>
+            <p>After downloading the ZIP file, extract its contents to a folder named "favicon" in your website's root directory.</p>
+            <p>The extracted files should include:</p>
+            <ul>
+                <li>favicon.ico (traditional favicon format)</li>
+                <li>favicon-16x16.png (16x16 pixel PNG)</li>
+                <li>favicon-32x32.png (32x32 pixel PNG)</li>
+                <li>favicon-48x48.png (48x48 pixel PNG)</li>
+                <li>favicon-64x64.png (64x64 pixel PNG)</li>
+                <li>apple-touch-icon.png (180x180 pixel for iOS devices)</li>
+                <li>site.webmanifest (web app manifest file)</li>
+            </ul>
+        </div>
+        
+        <div class="step">
+            <h2><span class="step-number">3</span> Add the Code to Your Website</h2>
+            <p>Copy and paste the following code into the <code>&lt;head&gt;</code> section of your HTML files:</p>
+            
+            <div class="code-container">
+                <div class="code-block">&lt;!-- Standard favicon --&gt;
+&lt;link rel="icon" type="image/x-icon" href="favicon/favicon.ico"&gt;
+
+&lt;!-- PNG favicons --&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="48x48" href="favicon/favicon-48x48.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64x64.png"&gt;
+
+&lt;!-- Apple Touch Icon --&gt;
+&lt;link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"&gt;
+
+&lt;!-- Web App Manifest --&gt;
+&lt;link rel="manifest" href="favicon/site.webmanifest"&gt;</div>
+                <button class="copy-btn" onclick="copyCode()">
+                    <i class="bi bi-clipboard"></i> Copy
+                </button>
+            </div>
+            
+            <div class="note">
+                <strong>Note:</strong> Make sure the path to your favicon folder is correct. If you placed your favicon files in a different location, update the <code>href</code> attributes accordingly.
+            </div>
+        </div>
+        
+        <div class="step">
+            <h2><span class="step-number">4</span> Verify Implementation</h2>
+            <p>After adding the code to your website:</p>
+            <ul>
+                <li>Refresh your website in the browser or open your website on incognito/private mode</li>
+                <li>Check that the favicon appears in the browser tab</li>
+                <li>Test on different devices and browsers if possible</li>
+                <li>For mobile devices, add your website to the home screen to test the apple-touch-icon</li>
+            </ul>
+        </div>
+        
+        <div class="step">
+            <h2>Troubleshooting</h2>
+            <h3>Favicon Not Appearing?</h3>
+            <ul>
+                <li>Ensure the favicon files are in the correct directory (usually a "favicon" folder in your root directory)</li>
+                <li>Clear your browser cache and refresh the page</li>
+                <li>Check that the file paths in the code match your directory structure</li>
+                <li>Verify that your web server is configured to serve .ico files correctly</li>
+            </ul>
+            
+            <h3>Different Sizes for Different Purposes</h3>
+            <ul>
+                <li><strong>favicon.ico</strong> - Traditional format, used by older browsers</li>
+                <li><strong>16x16 PNG</strong> - Standard browser tab icon</li>
+                <li><strong>32x32 PNG</strong> - Taskbar shortcut icon (Windows)</li>
+                <li><strong>180x180 PNG</strong> - iOS home screen icon</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>Need more help? Contact <a href="https://adnans.website">adnanscode</a> or one of them AI thingies :></p>
+            <a href="index.html" class="back-link">← Back to Favicon Generator</a>
+        </footer>
+    </div>
+
+    <script>
+        function copyCode() {
+            const codeBlock = document.querySelector('.code-block');
+            const textToCopy = codeBlock.textContent;
+            
+            // Create a temporary textarea to hold the text
+            const textarea = document.createElement('textarea');
+            textarea.value = textToCopy;
+            document.body.appendChild(textarea);
+            
+            // Select and copy the text
+            textarea.select();
+            document.execCommand('copy');
+            
+            // Remove the textarea
+            document.body.removeChild(textarea);
+            
+            // Provide visual feedback
+            const button = document.querySelector('.copy-btn');
+            const originalHtml = button.innerHTML;
+            const originalText = button.textContent;
+            
+            button.innerHTML = '<i class="bi bi-check"></i> Copied!';
+            button.style.backgroundColor = '#4CAF50';
+            
+            setTimeout(() => {
+                button.innerHTML = originalHtml;
+                button.textContent = originalText;
+                button.style.backgroundColor = '';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

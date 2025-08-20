@@ -3845,6 +3845,61 @@
                     <label for="borderWidth">Border Width <span id="borderWidthValue" class="range-value">0</span>px</label>
                     <input type="range" id="borderWidth" min="0" max="20" value="0">
                 </div>
+
+                <style>
+                  .code-container {
+            position: relative;
+            margin: 1rem 0;
+        }
+        
+        .code-block {
+            background-color: var(--light-bg);
+            padding: 1rem;
+            font-family: monospace;
+            white-space: pre-wrap;
+            border: 1px solid var(--black);
+            overflow-x: auto;
+        }
+        
+        .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background-color: var(--black);
+            color: var(--white);
+            border: none;
+            padding: 0.4rem 0.8rem;
+            cursor: pointer;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .copy-btn:hover {
+            opacity: 0.9;
+        }
+                </style>
+                <a title="Click to go to documentation page." href="/documentation/" style="text-decoration: none;margin: 0;padding: 0;color: black;">How to use? Visit the <span style="text-decoration: underline;">documentation</span>.</a>
+                            <div class="code-container">
+                <div class="code-block">&lt;!-- Standard favicon --&gt;
+&lt;link rel="icon" type="image/x-icon" href="favicon/favicon.ico"&gt;
+
+&lt;!-- PNG favicons --&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="48x48" href="favicon/favicon-48x48.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64x64.png"&gt;
+
+&lt;!-- Apple Touch Icon --&gt;
+&lt;link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"&gt;
+
+&lt;!-- Web App Manifest --&gt;
+&lt;link rel="manifest" href="favicon/site.webmanifest"&gt;</div>
+                <button class="copy-btn" onclick="copyCode()">
+                    <i class="bi bi-clipboard"></i> Copy
+                </button>
+            </div>
             </div>
         </div>
         
@@ -3864,5 +3919,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="script.js"></script>
+    
+    <script>
+        function copyCode() {
+            const codeBlock = document.querySelector('.code-block');
+            const textToCopy = codeBlock.textContent;
+            
+            // Create a temporary textarea to hold the text
+            const textarea = document.createElement('textarea');
+            textarea.value = textToCopy;
+            document.body.appendChild(textarea);
+            
+            // Select and copy the text
+            textarea.select();
+            document.execCommand('copy');
+            
+            // Remove the textarea
+            document.body.removeChild(textarea);
+            
+            // Provide visual feedback
+            const button = document.querySelector('.copy-btn');
+            const originalHtml = button.innerHTML;
+            const originalText = button.textContent;
+            
+            button.innerHTML = '<i class="bi bi-check"></i> Copied!';
+            button.style.backgroundColor = '#4CAF50';
+            
+            setTimeout(() => {
+                button.innerHTML = originalHtml;
+                button.textContent = originalText;
+                button.style.backgroundColor = '';
+            }, 2000);
+        }
+    </script>
 </body>
 </html>
