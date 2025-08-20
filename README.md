@@ -9,7 +9,7 @@ It lets you create favicons from text with **custom fonts, shapes, and colors**,
 |    | |/ _ \ \/ / __| | __/ _ \  | |_ / _` \ \ / / |/ __/ _ \| '_ \   |
 |    | |  __/>  <| |_  | || (_) | |  _| (_| |\ V /| | (_| (_) | | | |  |
 |    |_|\___/_/\_\\__|  \__\___/  |_|  \__,_| \_/ |_|\___\___/|_| |_|  |
-|                                  This work is the art of adnanscode  |
+|                                                      adnans.website  |
 +----------------------------------------------------------------------+
 ```
 Preview:
