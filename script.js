@@ -539,7 +539,7 @@ downloadBtn.addEventListener('click', async () => {
         // Generate ZIP
         const content = await zip.generateAsync({ type: 'blob' });
         const link = document.createElement('a');
-        link.download = 'favicons.zip';
+        link.download = 'favicon.zip';
         link.href = URL.createObjectURL(content);
         link.click();
 
